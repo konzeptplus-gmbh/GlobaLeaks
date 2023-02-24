@@ -1,0 +1,29 @@
+name: Feature request
+description: Suggest a new feature.
+title: "Suggest a new feature"
+labels: ["Triage", "T: Feature"]
+assignees: [evilaliv3]
+body:
+  - type: checkboxes
+    attributes:
+      label: Prerequisites
+      description: Take a couple minutes to help our maintainers work faster.
+      options:
+        - label: I have [searched](https://github.com/twbs/bootstrap/issues?utf8=%E2%9C%93&q=is%3Aissue) for duplicate or closed feature requests
+          required: true
+        - label: I have read the [contributing guidelines](https://github.com/globaleaks/GlobaLeaks/blob/main/CONTRIBUTING.md)
+          required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposal
+      description: Provide detailed information about your feature idead including references to related work.
+    validations:
+      required: true
+  - type: textarea
+    id: motivation
+    attributes:
+      label: Motivation and context
+      description: Tell us why you consider this feature or change is needed or would be helpful, and what problems it may help solve.
+    validations:
+      required: true
